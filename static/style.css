@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: radial-gradient(circle at top, #020617, #000814);
+    color: white;
+}
+
+/* Navbar */
+.navbar {
+    padding: 20px 50px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #22d3ee;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h1 {
+    font-size: 42px;
+}
+
+.hero span {
+    color: #22d3ee;
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.card {
+    background: rgba(15, 23, 42, 0.8);
+    border-radius: 16px;
+    padding: 30px;
+    width: 320px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.card h3 {
+    margin-top: 15px;
+}
+
+.card p {
+    color: #94a3b8;
+}
+
+.btn {
+    margin-top: 20px;
+    display: block;
+    padding: 12px;
+    background: linear-gradient(to right, #06b6d4, #22d3ee);
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* Form */
+.form-box {
+    width: 420px;
+    margin: 50px auto;
+    background: rgba(15, 23, 42, 0.9);
+    padding: 30px;
+    border-radius: 16px;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: none;
+    background: #020617;
+    color: white;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(to right, #06b6d4, #22d3ee);
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Table */
+table {
+    width: 90%;
+    margin: 30px auto;
+    border-collapse: collapse;
+}
+
+th {
+    background: #06b6d4;
+    padding: 12px;
+}
+
+td {
+    background: rgba(15,23,42,0.8);
+    padding: 10px;
+}
+
+.pending { color: #facc15; }
+.resolved { color: #22c55e; }

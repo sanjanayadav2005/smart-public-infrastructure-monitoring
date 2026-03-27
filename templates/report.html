@@ -1,0 +1,17 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+<div class="form-box">
+<h2>Report Infrastructure Issue</h2>
+
+<form method="POST" enctype="multipart/form-data">
+
+<textarea name="desc" placeholder="Describe the issue in detail..."></textarea>
+
+<input type="text" name="loc" placeholder="Enter location">
+
+<input type="file" name="image">
+
+<button type="submit">Submit Issue</button>
+
+</form>
+</div>

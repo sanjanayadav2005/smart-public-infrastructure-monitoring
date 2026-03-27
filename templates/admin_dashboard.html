@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+<h2 style="text-align:center;">Admin Dashboard</h2>
+
+<table>
+<tr>
+<th>ID</th>
+<th>Description</th>
+<th>Location</th>
+<th>Image</th>
+<th>Status</th>
+<th>Action</th>
+</tr>
+
+{% for row in data %}
+<tr>
+<td>{{row[0]}}</td>
+<td>{{row[1]}}</td>
+<td>{{row[2]}}</td>
+<td><img src="{{ url_for('static', filename='uploads/' + row[3]) }}" width="80"></td>
+<td class="{{row[4]|lower}}">{{row[4]}}</td>
+<td><a href="/resolve/{{row[0]}}" class="btn">Resolve</a></td>
+</tr>
+{% endfor %}
+</table>
